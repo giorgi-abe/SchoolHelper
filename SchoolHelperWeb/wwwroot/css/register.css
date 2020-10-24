@@ -1,0 +1,151 @@
+﻿.main {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #222;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin: 0px;
+    padding: 50px 0;
+}
+
+    .main .container {
+        width: 1400px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 0px;
+    }
+
+.signup-content {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.signup-img {
+    position: relative;
+    width: 385px;
+}
+
+    .signup-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 0.3s ease;
+    background: linear-gradient( rgba(127, 58, 180, 58), rgba(249, 26, 56, 73), rgba(69, 94, 252, 65) );
+}
+
+.signup-img-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+    .signup-img-content h2 {
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+        font-weight: 900;
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 26px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .signup-img-content p {
+        margin: 0px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+.signup-content form {
+    max-width: 65%;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0px 40px;
+}
+
+    .signup-content form label {
+        font-weight: bold;
+    }
+
+    .signup-content form input {
+        padding: 15px 10px;
+    }
+
+    .signup-content form .form-row {
+        justify-content: space-between;
+    }
+
+    .signup-content form .form-group {
+        width: 45%;
+    }
+
+.card-select-box .card-select input {
+    display: none;
+}
+
+.card-select-box .card-select {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+.card-select label {
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    padding: 55px;
+    display: block;
+    cursor: pointer;
+    border: 3px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+    .card-select label:nth-child(2) {
+        background-image: url(https://res.cloudinary.com/ddmz8jevk/image/upload/v1592904239/kisspng-clip-art-student-computer-icons-school-illustratio-5b9af2b9630e50.4680370415368813374057_o5dayd.png);
+    }
+
+    .card-select label:nth-child(4) {
+        background-image: url(https://res.cloudinary.com/ddmz8jevk/image/upload/v1592922076/teacher_xi66k0.png);
+    }
+
+.card-select input:checked + label {
+    border-radius: 100%;
+    background-color: #ff809e;
+}
+
+    .card-select input:checked + label:after {
+        content: "\2713";
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 100%;
+        border: 2px solid #333;
+        background: linear-gradient( rgba(127, 58, 180, 58), rgba(249, 26, 56, 73), rgba(69, 94, 252, 65) );
+        index: 999;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }

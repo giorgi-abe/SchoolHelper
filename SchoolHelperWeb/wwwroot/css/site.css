@@ -1,0 +1,440 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav-section .upper-menu {
+    width: 100%;
+    background-color: #303437;
+}
+
+    .nav-section .upper-menu .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+.welcome-box {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    color: grey;
+}
+
+.social-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+    .social-box > a {
+        width: 20px;
+    }
+
+.icon-twitter {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-facebook {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-linkedin {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-dribbble {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/peelicons-vol-1/50/Dribbble-512.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*----------------------- top menu--------------------- */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    place-items: center;
+}
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
+    }
+
+    .menu > ul > li > a {
+        text-decoration: none;
+        color: #3c4250;
+        font-family: "Oswald", sans-serif;
+        font-size: larger;
+        transition: all 200ms ease;
+    }
+
+    .menu > ul > li:hover > a {
+        color: #f91a38;
+    }
+
+#colorlib-logo {
+    background-image: url(https://dewey.tailorbrands.com/production/brand_version_mockup_image/495/3227908495_ad2725c3-ba1d-4d1f-9578-7d0a25884d9a.png?cb=1593376018);
+    height: 70px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.top-menu {
+    padding: 10px 0px;
+}
+
+
+.w-100 {
+    max-height: 600px;
+}
+
+.carousel-caption > h5 {
+    font-size: 50px;
+    font-weight: 800;
+    opacity: 1;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+}
+
+.carousel-caption > a {
+    border-radius: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.service-icon {
+    background-position: center;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+    background-color: rgba(0, 108, 255, 0.15);
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
+}
+
+.service-item:hover .service-icon {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0s;
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
+
+.service-item:nth-child(1) .service-icon {
+    background-image: url(https://i.ya-webdesign.com/images/book-png-icon-5.png);
+}
+
+.service-item:nth-child(2) .service-icon {
+    background-image: url(https://ya-webdesign.com/transparent250_/school-png-icon-7.png);
+}
+
+.service-item:nth-child(3) .service-icon {
+    background-image: url(https://ya-webdesign.com/transparent250_/certificate-clipart-certificate-symbol-9.png);
+}
+
+.service-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.service-item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+
+    .service-item:hover {
+        background: #f91a38;
+        box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.5s ease 0;
+        transition: all 0.5s ease 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .service-item .service-text {
+        width: 100%;
+    }
+
+        .service-item .service-text h4 {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            font-weight: 500;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+    .service-item:hover h4,
+    .service-item:hover p {
+        color: #fff;
+        -webkit-transition: all 0.5s ease 0;
+        transition: all 0.5s ease 0;
+        transition: all 0.5s ease 0s;
+    }
+
+.schoolhelper-services {
+    margin-top: 50px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f91a38;
+    border-color: #f91a38;
+}
+
+    .btn-primary:hover {
+        background-color: #da0723;
+        border-color: #da0723;
+    }
+/* ----------------------------counter------------------------------ */
+.schoolhelper-counter {
+    position: relative;
+    z-index: -1;
+    padding: 7em 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+    .schoolhelper-counter .overlay {
+        z-index: 0;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+#counter-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+    .stats i {
+        color: white;
+        font-size: 60px;
+    }
+
+#counter-stats .row {
+    justify-content: space-around;
+    align-items: center;
+}
+/*--------------------------Foter------------------------*/
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    position: absolute;
+    width: 100%;
+    white-space: nowrap;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5;
+    }
+
+        .site-footer hr.small {
+            margin: 20px 0;
+        }
+
+    .site-footer h6 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px;
+    }
+
+    .site-footer a {
+        color: #737373;
+    }
+
+        .site-footer a:hover {
+            color: #e82c45;
+            text-decoration: none;
+        }
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+    .footer-links li {
+        display: block;
+    }
+
+    .footer-links a {
+        color: #737373;
+    }
+
+        .footer-links a:active,
+        .footer-links a:focus,
+        .footer-links a:hover {
+            color: #e82c45;
+            text-decoration: none;
+        }
+
+    .footer-links.inline li {
+        display: inline-block;
+    }
+
+.site-footer .social-icons {
+    text-align: right;
+}
+
+    .site-footer .social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 6px;
+        margin-right: 0;
+        border-radius: 100%;
+        background-color: #33353d;
+    }
+
+.copyright-text {
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+
+        .site-footer .copyright-text,
+        .site-footer .social-icons {
+            text-align: center;
+        }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    .social-icons li {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+        .social-icons li.title {
+            margin-right: 15px;
+            text-transform: uppercase;
+            color: #96a2b2;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+    .social-icons a {
+        background-color: #eceeef;
+        color: #818a91;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 44px;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+
+        .social-icons a:active,
+        .social-icons a:focus,
+        .social-icons a:hover {
+            color: #fff;
+            background-color: #29aafe;
+        }
+
+    .social-icons.size-sm a {
+        line-height: 34px;
+        height: 34px;
+        width: 34px;
+        font-size: 14px;
+    }
+
+    .social-icons a.facebook:hover {
+        background-color: #3b5998;
+    }
+
+    .social-icons a.twitter:hover {
+        background-color: #00aced;
+    }
+
+    .social-icons a.linkedin:hover {
+        background-color: #007bb6;
+    }
+
+    .social-icons a.dribbble:hover {
+        background-color: #ea4c89;
+    }
+
+@media (max-width: 767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+}
+

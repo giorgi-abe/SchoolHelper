@@ -1,0 +1,19 @@
+﻿
+
+@{
+    ViewData["Title"] = "AddSubject";
+    Layout = "~/Views/Shared/_logedInLayout.cshtml";
+}
+@section Styles {
+    <link href="@Url.Content("~/css/AddSubject.css")" rel="stylesheet" type="text/css" />
+}
+<form action="AddSubject" method="post">
+    <h1>Save Subject</h1>
+    <fieldset>
+        <label for="name">Subject name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="mail">Teacher name:</label>
+        <input type="text" id="surnname" name="teachername" />
+    </fieldset>
+    <button type="submit">Save</button>
+</form>

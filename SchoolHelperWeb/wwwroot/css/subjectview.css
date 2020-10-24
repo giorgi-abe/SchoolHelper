@@ -1,0 +1,32 @@
+﻿addsubject-section {
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    padding: 7em 0;
+    position: relative;
+    z-index: 0;
+}
+
+.addsubject-section .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    background: linear-gradient( 240deg, rgba(1004, 14, 173, 56), rgba(249, 26, 75, 74), rgba(25, 42, 150, 60) );
+}
+
+.addsubject-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .addsubject-box > a {
+        z-index: 2;
+        box-shadow: none;
+        text-decoration: none;
+    }

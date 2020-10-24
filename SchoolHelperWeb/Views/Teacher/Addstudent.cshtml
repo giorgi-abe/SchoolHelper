@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "Addstudent";
+    Layout = "~/Views/Shared/_LogedInLayout.cshtml";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/css/addstudent.css")" rel="stylesheet" type="text/css" />
+}
+<form action="AddStudent" method="post" enctype="multipart/form-data">
+    <h1>Save Student</h1>
+    <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="mail">Surname:</label>
+        <input type="text" id="surnname" name="surname" />
+        <div class="row">
+            <div class="col-half">
+                <label for="birthday">Birthday:</label>
+                <div class="input-group">
+                    <div class="col-third">
+                        <input type="number" placeholder="DD" name="day" />
+                    </div>
+                    <div class="col-third">
+                        <input type="number" placeholder="MM" name="month" />
+                    </div>
+                    <div class="col-third">
+                        <input type="number" placeholder="YYYY" name="year" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-half">
+                <label for="gender">Gender:</label>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="radio"
+                           name="gender"
+                           id="male"
+                           value="0"
+                           checked />
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="radio"
+                           name="gender"
+                           id="female"
+                           value="1" />
+                    <label class="form-check-label" for="exampleRadios2">
+                        Female
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="radio"
+                           name="gender"
+                           id="other"
+                           value="2" />
+                    <label class="form-check-label" for="exampleRadios3">
+                        Other
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <label for="mail">Mail:</label>
+        <input type="email" id="email" name="email" />
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" />
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" />
+        <label for="">Image</label>
+        <label for="avatar">Choose a picture:</label>
+        <input type="file"
+               id="avatar"
+               name="avatar"
+               accept="image/png, image/jpeg" />
+    </fieldset>
+    <button type="submit">Save</button>
+</form>
+
+
+

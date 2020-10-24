@@ -1,0 +1,21 @@
+﻿@model SchoolHelperDomainModels.Implementation.Student
+@{
+    ViewData["Title"] = "SendMail";
+    Layout = "~/Views/Shared/_LogedInLayout.cshtml";
+}
+@section Styles {
+    <link href="@Url.Content("~/css/mailsender.css")" rel="stylesheet" type="text/css" />
+}
+<form action="SendMail" method="post">
+    <h1>Send Email</h1>
+    <input type="text" name="mail" value="@Model.Mail" style="display:none;" />
+    <input type="text" name="name" value="@Model.Name" style="display:none;" />
+    <fieldset>
+        <label for="subject">Subject :</label>
+        <input type="text" id="name" name="subject" />
+        <label for="main">Text:</label>
+        <textarea name="maintext" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+    <button type="submit">Send</button>
+</form>
+

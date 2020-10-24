@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1E45E7F-EE48-4861-B6F7-71486BFDA038}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SchoolHelper</RootNamespace>
+    <AssemblyName>SchoolHelper</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolHelperApplicationServices\SchoolHelperApplicationServices.csproj">
+      <Project>{658aaf08-61b0-4ea6-8cf9-0ab2907f8eb0}</Project>
+      <Name>SchoolHelperApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolHelperDomainModels\SchoolHelperDomainModels.csproj">
+      <Project>{a8d90208-ac91-4b23-a67a-3961b4af4cbd}</Project>
+      <Name>SchoolHelperDomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolHelperDomainServices\SchoolHelperDomainServices.csproj">
+      <Project>{f0c8c2a3-4e5f-4f58-97b3-b53dc93176b4}</Project>
+      <Name>SchoolHelperDomainServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolHelperDtos\SchoolHelperDtos.csproj">
+      <Project>{1c145bbd-c1e5-4477-b0ef-172f1f985f18}</Project>
+      <Name>SchoolHelperDtos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SchoolHelperFIrebase\SchoolHelperFIrebase.csproj">
+      <Project>{0a2be2a9-87d4-4272-b4f8-32f61870f1fb}</Project>
+      <Name>SchoolHelperFIrebase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

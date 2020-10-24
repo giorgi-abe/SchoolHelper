@@ -1,0 +1,44 @@
+﻿.global-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+
+}
+
+.card-title {
+    font-weight: 300;
+}
+
+.btn {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+.login-form {
+    width: 330px;
+    margin: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sign-up {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.alert {
+    margin-bottom: -30px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.site-footer {
+
+    bottom:0px;
+}
